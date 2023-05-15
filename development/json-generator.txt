@@ -1,0 +1,40 @@
+[
+  {
+    facebook: {
+      username: '{{company() + integer(100, 999)}}',
+      followers: '{{integer(100, 9999999)}}',
+      followers_change: '{{integer(-2000, 2000)}}',
+      page_views: '{{integer(0, 1000)}}',
+      page_views_change: '{{integer(-2000, 2000)}}',
+      likes: '{{integer(0, 1000)}}',
+      likes_change: '{{integer(-2000, 2000)}}'
+    },
+    twitter: {
+      username: '{{company() + integer(100, 999)}}',
+      followers: '{{integer(100, 9999999)}}',
+      followers_change: '{{integer(-2000, 2000)}}',
+      likes: '{{integer(0, 1000)}}',
+      likes_change: '{{integer(-2000, 2000)}}',
+      retweets: '{{integer(0, 1000)}}',
+      retweets_change: '{{integer(-2000, 2000)}}'
+    },
+    instagram: {
+      username: '{{company() + integer(100, 999)}}',
+      followers: '{{integer(100, 9999999)}}',
+      followers_change: '{{integer(-2000, 2000)}}',
+      likes: '{{integer(0, 1000)}}',
+      likes_change: '{{integer(-2000, 2000)}}',
+      profile_views: '{{integer(0, 1000)}}',
+      profile_views_change: '{{integer(-2000, 2000)}}'
+    },
+    youtube: {
+      username: '{{company() + integer(100, 999)}}',
+      subscribers: '{{integer(100, 9999999)}}',
+      subscribers_change: '{{integer(-2000, 2000)}}',
+      likes: '{{integer(0, 1000)}}',
+      likes_change: '{{integer(-2000, 2000)}}',
+      total_views: '{{integer(0, 1000)}}',
+      total_views_change: '{{integer(-2000, 2000)}}'
+    }
+  }
+]
