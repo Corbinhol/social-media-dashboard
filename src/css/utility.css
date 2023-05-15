@@ -24,11 +24,14 @@
 
 * {
     font-family: 'Inter', sans-serif !important;
+    margin: 0;
+    padding: 0;
+    transition: .3s color;
 }
 
 :root {
     --very-dark-blue-bg: hsl(230, 17%, 14%);
-    --very-dark-blue-top-bg: hsl(232, 19%, 15%);
+    --very-dark-blue-top-bg: #1f212e;
     --dark-desaturated-blue: hsl(228, 28%, 20%);
     --desaturated-blue: hsl(228, 34%, 66%);
     --white: hsl(0, 0%, 100%);
@@ -38,6 +41,7 @@
     --dark-grayish-blue: hsl(228, 12%, 44%);
     --very-dark-blue: hsl(230, 17%, 14%);
 
+    --toggle-light: #aeb3cb;
     --text-xs: 0.75rem; /* 12px */
     --text-xs-line-height: 1rem; /* 16px */
     --text-sm: 0.875rem; /* 14px */
@@ -64,6 +68,18 @@
     --text-8xl-line-height: 1; /* 40px */
     --text-9xl: 8rem; /* 128px */
     --text-9xl-line-height: 1; /* 40px */
+}
+
+body {
+    background-color: var(--very-dark-blue-bg);
+}
+
+h1, h3, p {
+    color: var(--white);
+}
+
+h2 {
+    color: var(--desaturated-blue);
 }
 
 @media (min-width: 640px) { /* Small */
