@@ -29,17 +29,25 @@
     transition: .3s color;
 }
 
-:root {
-    --very-dark-blue-bg: hsl(230, 17%, 14%);
-    --very-dark-blue-top-bg: #1f212e;
-    --dark-desaturated-blue: hsl(228, 28%, 20%);
-    --desaturated-blue: hsl(228, 34%, 66%);
-    --white: hsl(0, 0%, 100%);
+.container {
+    width: 100%;
+}
 
-    --very-pale-blue: hsl(225, 100%, 98%);
+.light-mode {
+    --bg: hsl(225, 100%, 98%);
+    --main-text-color: hsl(230, 17%, 14%);
     --light-grayish-blue: hsl(227, 47%, 96%);
-    --dark-grayish-blue: hsl(228, 12%, 44%);
-    --very-dark-blue: hsl(230, 17%, 14%);
+    --accent-color: hsl(228, 12%, 44%);    
+} 
+
+
+:root {
+    --bg: hsl(230, 17%, 14%);
+    --main-text-color: hsl(0, 0%, 100%);
+    --very-dark-blue-top-bg: #1f212e;
+    --accent-color: #252a41;
+    --desaturated-blue: hsl(228, 34%, 66%);
+    
 
     --toggle-light: #aeb3cb;
     --text-xs: 0.75rem; /* 12px */
@@ -70,12 +78,19 @@
     --text-9xl-line-height: 1; /* 40px */
 }
 
+
+html {
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
 body {
-    background-color: var(--very-dark-blue-bg);
+    background-color: var(--bg);
 }
 
 h1, h3, p {
-    color: var(--white);
+    color: var(--main-text-color);
 }
 
 h2 {
@@ -91,29 +106,34 @@ h2 {
 @media (min-width: 768px) { /* Medium */
     body {
         max-width: 768px;
+        min-width: 768px;
     }
 }
 
 @media (min-width: 1024px) { /* Large */
     body {
         max-width: 1024px;
+        min-width: 1024px;
     }
 }
 
 @media (min-width: 1280px) { /* XL */
     body {
         max-width: 1280px;
+        min-width: 1280px;
     }
 }
 
 @media (min-width: 1536px) { /* 2XL */
     body {
         max-width: 1536px;
+        min-width: 1536px;
     }
 }
 
 @media (min-width: 1920px) { /* 3XL */
     body {
         max-width: 1920px;
+        min-width: 1920px;
     }
 }
