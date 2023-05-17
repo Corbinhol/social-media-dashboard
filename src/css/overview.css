@@ -12,6 +12,10 @@
     padding: 0 0 1em 0;
 }
 
+.overview h2 {
+    color: var(--main-text-color);
+}
+
 .overview .card {
     display: flex;
     justify-content: space-between;
@@ -20,6 +24,11 @@
     background-color: var(--card-background);
     gap: 1em;
     border-radius: .5em;
+}
+
+.overview .card:hover {
+    transition: .6s background-color;
+    background-color: var(--card-background-hover);
 }
 
 .overview p {
@@ -94,6 +103,4 @@
         padding: 3em 2em;
         gap: 2em;
     }
-
-
 }

@@ -17,7 +17,11 @@
     position: relative;
     border-radius: .5em;
     overflow: hidden;
+}
 
+.main-card:hover {
+    transition: .6s background-color;
+    background-color: var(--card-background-hover);
 }
 
 .main-card .username-section {
@@ -32,6 +36,7 @@
 .main-card h2 {
     font-size: var(--text-sm);
     font-weight: 200;
+    color: var(--desaturated-blue)
 }
 
 .main-card h1 {
