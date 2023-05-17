@@ -37,7 +37,8 @@
     --bg: hsl(225, 100%, 98%);
     --main-text-color: hsl(230, 17%, 14%);
     --light-grayish-blue: hsl(227, 47%, 96%);
-    --accent-color: hsl(228, 12%, 44%);    
+    --accent-color: hsl(228, 12%, 44%);
+    --card-background: hsla(228, 12%, 44%, 10%);   
 } 
 
 
@@ -45,9 +46,9 @@
     --bg: hsl(230, 17%, 14%);
     --main-text-color: hsl(0, 0%, 100%);
     --very-dark-blue-top-bg: #1f212e;
-    --accent-color: #252a41;
+    --accent-color: hsl(229, 27%, 20%);
     --desaturated-blue: hsl(228, 34%, 66%);
-    
+    --card-background: hsla(229, 27%, 20%, 35%);
 
     --toggle-light: #aeb3cb;
     --text-xs: 0.75rem; /* 12px */
@@ -78,6 +79,9 @@
     --text-9xl-line-height: 1; /* 40px */
 }
 
+.display-none {
+    display: none;
+}
 
 html {
     min-width: 100vw;
