@@ -1,8 +1,99 @@
 .overview {
-    padding: 1.5em 1em
+    padding: 1.5em 1em;   
+}
+
+.overview-cards {
+    display: grid;
+    gap: 1.5em;
 }
 
 .overview h1 {
     font-size: var(--text-2xl);
+    padding: 0 0 1em 0;
 }
 
+.overview .card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2em 1em;
+    background-color: var(--card-background);
+    gap: 1em;
+    border-radius: .5em;
+}
+
+.overview p {
+    color: #dc414c;
+    font-weight: 800;
+    font-size: var(--text-sm);
+}
+
+.overview p.up {
+    color: #1eb589;
+
+}
+
+
+.overview .half {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.overview .difference {
+    display: flex;
+    gap: .3em;
+    align-items: center;
+}
+
+@media (min-width: 640px) { 
+    
+}
+
+@media (min-width: 768px) {
+    .overview-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    .overview {
+        margin: 0 8em;
+    }
+
+    .overview .card {
+        gap: 2em;
+        padding: 2em
+    }
+}
+
+@media (min-width: 1280px) {
+    .overview {
+        margin: 0 12em;
+
+    }
+}
+
+@media (min-width: 1536px) { 
+    .overview-cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 3em
+    }
+
+    .overview {
+        margin: 0 6em;
+    }
+
+    .overview .card {
+        padding: 2em
+    }
+}
+
+@media (min-width: 1920px) {
+    .overview .card {
+        padding: 3em 2em;
+        gap: 2em;
+    }
+
+
+}
