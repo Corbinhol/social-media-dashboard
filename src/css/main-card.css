@@ -46,6 +46,12 @@
 
 .main-card p {
     font-size: var(--text-sm);
+    color: #dc414c;
+    font-weight: 900;
+}
+
+.main-card p.up {
+    color: #1eb589;
 }
 
 .main-card .logo {
