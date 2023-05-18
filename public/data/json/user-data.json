@@ -1,40 +1,38 @@
-[
-    {
-      "facebook": {
-        "username": "Manglo213",
-        "followers": 9940876,
-        "followers_change": -1096,
-        "page_views": 303,
-        "page_views_change": -1258,
-        "likes": 765,
-        "likes_change": -94
-      },
-      "twitter": {
-        "username": "Ebidco804",
-        "followers": 5325935,
-        "followers_change": -1807,
-        "likes": 938,
-        "likes_change": -590,
-        "retweets": 957,
-        "retweets_change": -397
-      },
-      "instagram": {
-        "username": "Quilk279",
-        "followers": 7858008,
-        "followers_change": -904,
-        "likes": 865,
-        "likes_change": 913,
-        "profile_views": 396,
-        "profile_views_change": 1743
-      },
-      "youtube": {
-        "username": "Telpod934",
-        "subscribers": 8307945,
-        "subscribers_change": 1664,
-        "likes": 808,
-        "likes_change": -1748,
-        "total_views": 285,
-        "total_views_change": -1140
-      }
-    }
-  ]
+{
+  "facebook": {
+    "username": "nathanf",
+    "followers": 1987,
+    "followers_change": 12,
+    "page_views": 87,
+    "page_views_change": 3,
+    "likes": 52,
+    "likes_change": -2
+  },
+  "twitter": {
+    "username": "nathanf",
+    "followers": 1044,
+    "followers_change": 99,
+    "likes": 507,
+    "likes_change": 553,
+    "retweets": 117,
+    "retweets_change": 303
+  },
+  "instagram": {
+    "username": "realnathanf",
+    "followers": 11000,
+    "followers_change": 1099,
+    "likes": 546243434,
+    "likes_change": 91,
+    "profile_views": 636,
+    "profile_views_change": 1167
+  },
+  "youtube": {
+    "username": "Nathan F.",
+    "subscribers": 8239,
+    "subscribers_change": -144,
+    "likes": 650,
+    "likes_change": -1430,
+    "total_views": 413,
+    "total_views_change": -708
+  }
+}

@@ -63,10 +63,10 @@ if(jsonData.facebook.followers_change > 0) { //Checks if Followers increase or d
 }
 
 document.getElementById("facebook-followers-increase-number") //Change document to match
-    .innerHTML = Math.abs(jsonData.facebook.followers_change)
+    .innerHTML = formatNumber(Math.abs(jsonData.facebook.followers_change))
 //Page Views
 document.getElementById("facebook-page-views")
-    .innerHTML = jsonData.facebook.page_views
+    .innerHTML = formatNumber(jsonData.facebook.page_views)
 
 if(jsonData.facebook.page_views_change > 0) {
     green("facebook-page-views-change");
@@ -78,10 +78,10 @@ if(jsonData.facebook.page_views_change > 0) {
 }
 
 document.getElementById("facebook-page-views-change")
-    .innerHTML = Math.abs(jsonData.facebook.page_views_change) + "%";
+    .innerHTML = formatNumber(Math.abs(jsonData.facebook.page_views_change)) + "%";
 //Likes
 document.getElementById("facebook-likes")
-    .innerHTML = jsonData.facebook.likes
+    .innerHTML = formatNumber(jsonData.facebook.likes)
 
 if(jsonData.facebook.likes_change > 0) {
     green("facebook-likes-change");
@@ -93,7 +93,7 @@ if(jsonData.facebook.likes_change > 0) {
 }
 
 document.getElementById("facebook-likes-change")
-    .innerHTML = Math.abs(jsonData.facebook.likes_change) + "%"
+    .innerHTML = formatNumber(Math.abs(jsonData.facebook.likes_change)) + "%"
 
 //Twitter
 //Main Card
@@ -112,10 +112,10 @@ if(jsonData.twitter.followers_change > 0) { //Checks if Followers increase or de
 }
 
 document.getElementById("twitter-follower-increase-number") //Change document to match
-    .innerHTML = Math.abs(jsonData.twitter.followers_change)
+    .innerHTML = formatNumber(Math.abs(jsonData.twitter.followers_change))
 //Likes
 document.getElementById("twitter-likes")
-    .innerHTML = jsonData.twitter.likes
+    .innerHTML = formatNumber(jsonData.twitter.likes);
 
 if(jsonData.twitter.likes_change > 0) {
     green("twitter-likes-change");
@@ -127,11 +127,11 @@ if(jsonData.twitter.likes_change > 0) {
 }
 
 document.getElementById("twitter-likes-change")
-    .innerHTML = Math.abs(jsonData.twitter.likes_change) + "%";
+    .innerHTML = formatNumber(Math.abs(jsonData.twitter.likes_change)) + "%";
 
 //Retweets
 document.getElementById("twitter-retweets")
-    .innerHTML = jsonData.twitter.retweets
+    .innerHTML = formatNumber(jsonData.twitter.retweets)
 
 if(jsonData.twitter.retweets_change > 0) {
     green("twitter-retweets-change");
@@ -143,7 +143,7 @@ if(jsonData.twitter.retweets_change > 0) {
 }
 
 document.getElementById("twitter-retweets-change")
-    .innerHTML = Math.abs(jsonData.twitter.retweets_change) + "%"
+    .innerHTML = formatNumber(Math.abs(jsonData.twitter.retweets_change)) + "%"
 
 //Instagram
 //Main Card
@@ -162,10 +162,10 @@ if(jsonData.instagram.followers_change > 0) { //Checks if Followers increase or 
 }
 
 document.getElementById("instagram-follower-increase-number") //Change document to match
-    .innerHTML = Math.abs(jsonData.instagram.followers_change)
+    .innerHTML = formatNumber(Math.abs(jsonData.instagram.followers_change))
 //Likes
 document.getElementById("instagram-likes")
-    .innerHTML = jsonData.instagram.likes
+    .innerHTML = formatNumber(jsonData.instagram.likes)
 
 if(jsonData.instagram.likes_change > 0) {
     green("instagram-likes-change");
@@ -177,11 +177,11 @@ if(jsonData.instagram.likes_change > 0) {
 }
 
 document.getElementById("instagram-likes-change")
-    .innerHTML = Math.abs(jsonData.instagram.likes_change) + "%";
+    .innerHTML = formatNumber(Math.abs(jsonData.instagram.likes_change)) + "%";
 
 //Profile Views
 document.getElementById("instagram-profile-views")
-    .innerHTML = jsonData.instagram.profile_views
+    .innerHTML = formatNumber(jsonData.instagram.profile_views)
 
 if(jsonData.instagram.profile_views_change > 0) {
     green("instagram-profile-views-change");
@@ -193,7 +193,7 @@ if(jsonData.instagram.profile_views_change > 0) {
 }
 
 document.getElementById("instagram-profile-views-change")
-    .innerHTML = Math.abs(jsonData.instagram.profile_views_change) + "%"
+    .innerHTML = formatNumber(Math.abs(jsonData.instagram.profile_views_change)) + "%"
 
 //Youtube
 //Main Card
@@ -212,10 +212,10 @@ showElement("youtube-down-arrow"); //shows up arrow
 }
 
 document.getElementById("youtube-follower-increase-number") //Change document to match
-.innerHTML = Math.abs(jsonData.youtube.subscribers_change)
+.innerHTML = formatNumber(Math.abs(jsonData.youtube.subscribers_change))
 //Likes
 document.getElementById("youtube-likes")
-.innerHTML = jsonData.youtube.likes
+.innerHTML = formatNumber(jsonData.youtube.likes)
 
 if(jsonData.youtube.likes_change > 0) {
 green("youtube-likes-change");
@@ -227,11 +227,11 @@ showElement("youtube-likes-down-arrow");
 }
 
 document.getElementById("youtube-likes-change")
-.innerHTML = Math.abs(jsonData.youtube.likes_change) + "%";
+.innerHTML = formatNumber(Math.abs(jsonData.youtube.likes_change)) + "%";
 
 //Total Views
 document.getElementById("youtube-total-views")
-.innerHTML = jsonData.youtube.total_views
+.innerHTML = formatNumber(jsonData.youtube.total_views)
 
 if(jsonData.youtube.total_views_change > 0) {
 green("youtube-total-views-change");
@@ -243,4 +243,4 @@ showElement("youtube-total-views-down-arrow");
 }
 
 document.getElementById("youtube-total-views-change")
-.innerHTML = Math.abs(jsonData.youtube.total_views_change) + "%"
+.innerHTML = formatNumber(Math.abs(jsonData.youtube.total_views_change)) + "%"
