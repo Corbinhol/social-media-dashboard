@@ -7,3 +7,4 @@ import '../css/overview.css'
 
 import '../js/load.js';
 import '../js/light_mode.js';
+import '../json/user-data.json';
